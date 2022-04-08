@@ -6,16 +6,51 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div p{
+    div p{
             color: crimson;
         }
+        div span{
+            color: yellowgreen;
+        }
+    div > p {
+           background-color: blueviolet; 
+        }
+    p ~ p {
+        color: lightseagreen;
+    }
+ul + h2 {
+        background-color: darkorange;
+    }
     </style>
 </head>
 <body>
     <div>
+        <h1>NStL</h1>
         <p>Platzi</p>
         <p>es</p>
+        <span>FREAKING</span>
         <p>Increible</p>
     </div>
+    <article>
+        <ul>
+            <li>Disiplina</li>
+            <li>Constancia</li>
+            <li>Curiosidad</li>
+            <p>Paciencia</p>
+            <li>Probando la etiqueta de <b>Negritas</b> a ver si jala</li>
+        </ul>
+        <h2>La mejor manera</h2>
+        <h2>De aprender</h2>
+        <div>
+            <article>
+            <p>La reproducción de audio a través del navegador ya es cosa de todos los días, y hay muchos usuarios allá afuera a los que les encantaría tener un control más</p>
+            </article>
+        </div>
+    </article>
+    <footer>
+        <p>Probando el</p>
+        <p>Footer</p>
+        <p>a ver que tal</p>
+    </footer>
 </body>
 </html>
