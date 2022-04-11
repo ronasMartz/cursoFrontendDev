@@ -9,12 +9,55 @@
         p{
             color: salmon;
         }
+        p::before{
+            content: "✨";
+        }
+        p::after{
+            content: "🌟";
+        }
         p:hover{
             color: skyblue;
         }
+        div p:nth-child(2){
+            color: violet;
+        }
+        p::first-letter{
+            color: teal;
+        }
+        ::placeholder{
+            color: tomato;
+        }
+        input:in-range {
+      background-color: rgba(114, 245, 114, 0.25);
+    }
+    
+    input:out-of-range {
+      background-color: rgba(245, 128, 128, 0.25);
+      border: 2px solid red;
+    }
+    
+    input:in-range + p::after {
+      content: 'Mayor de edad. 🚀';
+    }
+    
+    input:out-of-range + p::after {
+      content: 'Menor de edad. 🙈';
+    }
+
     </style>
 </head>
 <body>
     <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <p><input type="text" placeholder="name"></p>
+        <br><br>
+        <label for="age">Intoduce tu edad y te digo si eres menor o mayor de edad</label>
+        <input type="number" name="age" id="age" min="18" max="100" value="14">
+    <p>Eres: </p>
+    <p>clase 9 </p>
 </body>
 </html>
